@@ -1,0 +1,103 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+
+      canvas {
+        background: black none repeat scroll 0% 0%;
+        margin: 0px auto;
+        display: inline-block;
+      }
+
+      h1 {
+        line-height: 1.6;
+        font-size: xx-large;
+        color: white;
+        text-align: center;
+        font-family: Consolas, Roboto;
+      }
+
+      h2 {
+        line-height: 1.6;
+        font-size: x-large;
+        color: white;
+        text-align: center;
+        font-family: Consolas, Roboto;
+      }
+
+      p {
+        line-height: 1.6;
+        font-size: large;
+        color: white;
+        text-align: center;
+        font-family: Consolas, Roboto;
+      }
+
+      #offline {
+        font-size: large;
+        color: red;
+      }
+
+      a {
+        font-size: large;
+        text-decoration: none;
+      }
+
+      pre {
+        display: block;
+        border: 1px solid black;
+        overflow: auto;
+        max-height: 340px;
+        font-size: 12px;
+        width: 535px;
+        padding: 10px;
+        background: #e0e0e0 none repeat scroll 0% 0%;
+        text-align: left;
+      }
+
+      table, th, td {
+        border-collapse: collapse;
+        border: 1px solid black;
+      }
+
+      div.game {
+        background-color: #ffffff;
+        padding-top:10px;
+        padding-bottom:10px;
+      }
+      label {
+       	text-decoration: none;
+        color: white;
+        font-size:medium; 
+        font-family: Consolas, Roboto;
+      }
+		</style>
+  </head>
+  <body style=" background-color: black;">
+    <center>
+      <h1> Reaction Time Test </h1>
+      <label for="name">Name: </label> <input id="name" name="name">
+      
+      <div class="game">
+        <canvas id="gameArea" width="1920" height="1080" style="height: 400px; background: #000000;"></canvas>
+      </div>
+      <div class="scoreboard">
+        <table id="high" style="background-color: #ffffff; display: inline-block; padding: 10px">
+          <tr>
+          <th>Position</th>
+            <th>Name</th>
+            <th>Score</th>
+            <th>Date</th>
+          </tr>
+          <tr><td>test pos</td><td>test name</td><td>test score</td><td>test date</td></tr>
+				</table>
+      </div>
+      
+    </center>
+    <script src="reactiongame.js"></script>
+  </body>
+</html>
